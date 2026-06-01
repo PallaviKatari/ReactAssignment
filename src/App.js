@@ -9,6 +9,8 @@ import PropsChildren from './Components/PropsChildren';
 
 import Bootstrap from './Components/Bootstrap';
 import ClassJsonServerAPI from './Components/ClassJsonServerAPI';
+import SpreadSyntax from './Components/SpreadSyntax';
+import UserCard from './Components/Destructuring';
 
 export function App() {
   return (
@@ -25,8 +27,10 @@ function App1()
 {
   return (
     <div>
-      <Bootstrap />
-      <ClassJsonServerAPI/>
+      <UserCard name="John Doe" age={30} email="john.doe@example.com" />
+      {/* <Bootstrap /> */}
+      {/* <ClassJsonServerAPI/> */}
+      {/* <SpreadSyntax /> */}
       {/* <FunctionalComponent />
       <ClassComponent /> 
       <ClassLifecycle />
