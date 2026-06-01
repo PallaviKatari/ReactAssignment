@@ -1,25 +1,39 @@
 import logo from './logo.svg';
 import './App.css';
+import FunctionalComponent from './Components/FunctionalComponent';
+import ClassLifecycle from './Components/ClassLifecycle';
+import ConditionalRendering from './Components/ConditionalRendering';
 
-function App() {
+import PropsDemo from './Components/PropsDemo';
+import PropsChildren from './Components/PropsChildren';
+
+import Bootstrap from './Components/Bootstrap';
+import ClassJsonServerAPI from './Components/ClassJsonServerAPI';
+
+export function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <App1 />
     </div>
   );
 }
 
-export default App;
+// eslint-disable-next-line import/no-anonymous-default-export
+export default {App};
+
+function App1()
+{
+  return (
+    <div>
+      <Bootstrap />
+      <ClassJsonServerAPI/>
+      {/* <FunctionalComponent />
+      <ClassComponent /> 
+      <ClassLifecycle />
+      <ConditionalRendering />*/}
+      {/* <PropsDemo name="John Doe" age={30} /> */}
+      {/* <PropsChildren/> */}
+    </div>
+  );
+}
+

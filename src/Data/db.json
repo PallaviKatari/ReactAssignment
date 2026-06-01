@@ -1,0 +1,46 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "task": "Learn React",
+      "status": "completed",
+      "active": true
+    },
+    {
+      "id": "2",
+      "task": "Practice CRUD",
+      "status": "completed",
+      "active": true
+    },
+    {
+      "id": "da54",
+      "task": "Practice Todo",
+      "status": "completed",
+      "active": true
+    },
+    {
+      "id": "ef2a",
+      "task": "DemoList",
+      "status": "cancelled",
+      "active": false
+    },
+    {
+      "id": "981f",
+      "task": "DemoList1",
+      "status": "cancelled",
+      "active": true
+    },
+    {
+      "id": "4958",
+      "task": "DemoList2",
+      "status": "pending",
+      "active": true
+    },
+     {
+      "id": "4959",
+      "task": "DemoList3",
+      "status": "pending",
+      "active": true
+    }
+  ]
+}
