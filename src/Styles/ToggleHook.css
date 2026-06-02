@@ -1,0 +1,63 @@
+/* Toggle container */
+.toggle {
+display: flex;
+align-items: center;
+gap: 10px;
+cursor: pointer;
+user-select: none;
+}
+
+/* Hide the native checkbox */
+.toggle-checkbox {
+position: absolute;
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+/* The switch track */
+.toggle-switch {
+position: relative;
+width: 52px;
+height: 28px;
+background-color: #ccc;
+border-radius: 999px;
+transition: background-color 0.25s ease;
+flex-shrink: 0;
+}
+
+/* The switch thumb */
+.toggle-switch::after {
+content: "";
+position: absolute;
+top: 3px;
+left: 3px;
+width: 22px;
+height: 22px;
+background-color: #fff;
+border-radius: 50%;
+box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+transition: transform 0.25s ease;
+}
+
+/* Checked state — track turns on */
+.toggle-checkbox:checked + .toggle-switch {
+background-color: #4f46e5;
+}
+
+/* Checked state — thumb slides right */
+.toggle-checkbox:checked + .toggle-switch::after {
+transform: translateX(24px);
+}
+
+/* Focus ring for accessibility */
+.toggle-checkbox:focus-visible + .toggle-switch {
+outline: 2px solid #4f46e5;
+outline-offset: 2px;
+}
+
+/* Label text */
+.toggle-label {
+font-size: 0.95rem;
+color: #374151;
+}

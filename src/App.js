@@ -19,6 +19,10 @@ import Events from './Components/EventHandling';
 import ApiSearch from './Components/FilterSearch';
 
 import PersonList from './Components/AxiosDemo';
+import AwaitAsync from './Components/AxiosAsyncAwait';
+import AxiosuseAxios from './Components/useAxiosDemo';
+import ToggleHook from './Components/useToggle';
+import ReactstrapDemo from './Components/ReactStrapDemo';
 
 export function App() {
   return (
@@ -35,7 +39,7 @@ function App1()
 {
   return (
     <div>
-      <PersonList />
+      <ReactstrapDemo />
       {/* <UserCard name="John Doe" age={30} email="john.doe@example.com" /> */}
       {/* <Bootstrap /> */}
       {/* <ClassJsonServerAPI/> */}
