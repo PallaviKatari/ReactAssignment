@@ -11,6 +11,14 @@ import Bootstrap from './Components/Bootstrap';
 import ClassJsonServerAPI from './Components/ClassJsonServerAPI';
 import SpreadSyntax from './Components/SpreadSyntax';
 import UserCard from './Components/Destructuring';
+import Hooks from './Components/Hooks';
+import ReactHooks from './Components/HooksExample';
+
+import ReactFragments from './Components/ReactFragments';
+import Events from './Components/EventHandling';
+import ApiSearch from './Components/FilterSearch';
+
+import PersonList from './Components/AxiosDemo';
 
 export function App() {
   return (
@@ -27,7 +35,8 @@ function App1()
 {
   return (
     <div>
-      <UserCard name="John Doe" age={30} email="john.doe@example.com" />
+      <PersonList />
+      {/* <UserCard name="John Doe" age={30} email="john.doe@example.com" /> */}
       {/* <Bootstrap /> */}
       {/* <ClassJsonServerAPI/> */}
       {/* <SpreadSyntax /> */}

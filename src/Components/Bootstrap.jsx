@@ -1,71 +1,40 @@
-//Boostrap 5 Demo
+import React,{createContext,useContext} from "react";
+import {UserContext,UserContext1} from "./UserContext";
 
-export default function Bootstrap() {
+function Bootstrap() {
+  const user = React.useContext(UserContext1);
   return (
     <div>
-      <h1>Bootstrap 5 Demo</h1>
-      <button type="button" className="btn btn-primary">
-        Primary
-      </button>
-      <button type="button" className="btn btn-secondary">
-        Secondary
-      </button>
-      <button type="button" className="btn btn-success">
-        Success
-      </button>
-      <button type="button" className="btn btn-danger">
-        Danger
-      </button>
-      <button type="button" className="btn btn-warning">
-        Warning
-      </button>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Navbar
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Features
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Pricing
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link disabled"
-                  href="#"
-                  tabIndex="-1"
-                  aria-disabled="true"
-                >
-                  Disabled
-                </a>
-              </li>
-            </ul>
-          </div>
+      {/* Navbar */}
+      <nav className="navbar navbar-dark bg-dark">
+        <div className="container">
+          <span className="navbar-brand mb-0 h1">Welcome, {user.name}!</span>
         </div>
       </nav>
+
+      {/* Main Content */}
+      <div className="container mt-4">
+        <div className="row">
+          <div className="col-md-6 mx-auto">
+            <div className="card shadow">
+              <div className="card-body text-center">
+                <h3 className="card-title">Welcome</h3>
+                <p className="card-text">
+                  This is a simple React page using Bootstrap.
+                </p>
+                <button className="btn btn-primary">Click Me</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <div className="alert alert-primary" role="alert">
+        A simple primary alert—check it out!
+      </div> */}
+      {/* Footer */}
+      <footer className="bg-light text-center p-3 mt-4">© 2026 My App</footer>
     </div>
   );
 }
+
+export default Bootstrap;
