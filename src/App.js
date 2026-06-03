@@ -23,6 +23,12 @@ import AwaitAsync from './Components/AxiosAsyncAwait';
 import AxiosuseAxios from './Components/useAxiosDemo';
 import ToggleHook from './Components/useToggle';
 import ReactstrapDemo from './Components/ReactStrapDemo';
+import ReactHookForm from './Components/ReactHook.jsx';
+import LoginForm from './Components/FormikDemo.jsx';
+import UseMemoDemo from './Components/UseMemoDemo.jsx';
+import Users from './Components/useCallbackApi.jsx';
+
+import Callback from './Components/UseCallbackDemo.jsx';
 
 export function App() {
   return (
@@ -39,7 +45,7 @@ function App1()
 {
   return (
     <div>
-      <ReactstrapDemo />
+      <UseMemoDemo />
       {/* <UserCard name="John Doe" age={30} email="john.doe@example.com" /> */}
       {/* <Bootstrap /> */}
       {/* <ClassJsonServerAPI/> */}
